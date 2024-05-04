@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "smpc": {
+      "main": "src/smpc/main.mo",
+      "type": "motoko"
+    },
+    "smpc_assets": {
+      "dependencies": [
+        "smpc"
+      ],
+      "frontend": {
+        "entrypoint": "src/smpc_assets/src/index.html"
+      },
+      "source": [
+        "src/smpc_assets/assets",
+        "dist/smpc_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
