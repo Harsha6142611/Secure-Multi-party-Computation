@@ -1,0 +1,6 @@
+service : {
+  computeHash: () -> (nat32);
+  getHashValueCount: () -> (nat);
+  getHashValues: () -> (vec text);
+  submitHashValue: (text) -> () oneway;
+}
